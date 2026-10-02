@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hive Sovereign</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Main Game Canvas -->
+        <canvas id="game-canvas"></canvas>
+
+        <!-- UI / HUD Overlay -->
+        <div id="hud-overlay" class="hud-overlay">
+            <div id="top-bar">
+                <div class="stat-group">
+                    <span class="stat-label">Population:</span>
+                    <span id="stat-population">0</span>
+                </div>
+                <div class="stat-group">
+                    <span class="stat-label">Honey:</span>
+                    <span id="stat-honey">0</span>
+                </div>
+                <div class="stat-group">
+                    <span class="stat-label">Pollen:</span>
+                    <span id="stat-pollen">0</span>
+                </div>
+                <div class="stat-group">
+                    <span class="stat-label">Temperature:</span>
+                    <span id="stat-temp">35°C</span>
+                </div>
+                <div class="stat-group">
+                    <span class="stat-label">Season:</span>
+                    <span id="stat-season">Spring</span>
+                </div>
+            </div>
+
+            <div id="view-toggle-container">
+                <button id="btn-toggle-view" class="ui-btn">Switch to World View</button>
+            </div>
+
+            <div id="event-log">
+                <ul id="event-list">
+                    <li>Welcome to The Hive Sovereign</li>
+                </ul>
+            </div>
+
+            <!-- Inspect Modal -->
+            <div id="inspect-modal" class="hidden">
+                <h3 id="inspect-title">Cell Info</h3>
+                <div id="inspect-content"></div>
+                <button id="btn-close-inspect" class="ui-btn">Close</button>
+            </div>
+
+            <!-- Controls -->
+            <div id="controls-bar">
+                <button id="btn-speed-1x" class="ui-btn active">1x</button>
+                <button id="btn-speed-2x" class="ui-btn">2x</button>
+                <button id="btn-speed-5x" class="ui-btn">5x</button>
+                <button id="btn-pause" class="ui-btn">Pause</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="src/js/main.js"></script>
+</body>
+</html>
